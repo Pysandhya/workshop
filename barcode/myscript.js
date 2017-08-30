@@ -3,7 +3,7 @@ var list
 // The initial method called on page load
 function init() {
     // load details from data file
-    loadDataAndParse('ShoppingItems.json')
+    loadDataAndParse('details.json')
 }
 
 function getItemWithBarCode(event) {
@@ -71,11 +71,12 @@ function detailsOfItem(index) {
     
     var details = "id: " + list[index].id
     details += "<br>"
-    details += list[index].item
+    details += list[index].name
     details += "<br>"
-    details += list[index].description
+    details += list[index].course
     details += "<br>"
-    details += "Rs. " + list[index].price
+  
+   
     
     return details
 }
